@@ -24,6 +24,7 @@ body {
   font-family: Shrikhand;
   font-weight: bold;
   font-style: italic;
+  color: white;
 }
 
 /******Header****/
@@ -133,6 +134,24 @@ form ::placeholder {
 }
 .restaurant .restaurant-cards {
   padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.restaurant .restaurant-cards .new {
+  width: 20%;
+  height: 30px;
+  border: none;
+  border-radius: 2px;
+  color: #008766;
+  background-color: #99E2D0;
+  position: absolute;
+  align-content: center;
+  text-align: center;
+  margin-left: 218px;
+  margin-top: 14px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
 }
 .restaurant .restaurant-cards .card {
   width: 95%;
@@ -154,4 +173,38 @@ form ::placeholder {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
+}
+
+/*******Footer*****/
+footer {
+  width: 100%;
+  background-color: #353535;
+}
+footer .info {
+  padding: 22px 25px 22px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .info .title {
+  font-size: 18px;
+}
+footer .info menu {
+  padding: 0;
+  color: white;
+}
+footer .info menu .fa-utensils {
+  margin-right: 5px;
+}
+footer .info menu .fa-solid {
+  padding-right: 10px;
+  font-size: 14px;
+}
+footer .info li {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+footer .info li a {
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
