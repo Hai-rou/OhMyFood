@@ -11,13 +11,12 @@ header {
   align-items: center;
 }
 header a {
-  width: 100%;
   position: absolute;
   font-size: 20px;
   text-decoration: none;
   color: #353535;
   margin-top: 20px;
-  margin-left: 50px;
+  margin-left: -91%;
 }
 header img {
   width: 50%;
@@ -27,9 +26,6 @@ header img {
 }
 
 /******Body*****/
-main {
-  width: 100%;
-}
 main img {
   width: 100%;
   height: 275px;
@@ -45,7 +41,7 @@ main .menu {
   flex-direction: column;
   position: absolute;
   align-self: anchor-center;
-  margin-top: 170px;
+  margin-top: 256px;
 }
 main .menu .sub-title {
   margin-top: 10px;
@@ -103,5 +99,57 @@ main .menu .box .box-content .prix {
 
 /******Footer*****/
 footer {
-  margin-top: 813px;
+  margin-top: 896px;
+}
+
+/*******Desktop*******/
+@media (min-width: 1024px) {
+  header img {
+    width: 15%;
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  header a {
+    font-size: 15px;
+    padding-top: 18px;
+    margin-left: -97%;
+  }
+  /******Main******/
+  main .menu {
+    width: 73%;
+    margin-left: 14%;
+    margin-top: 33%;
+  }
+  main .menu .title {
+    text-align: center;
+    padding-left: 0;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  main .menu .sub-title {
+    margin-left: 15%;
+  }
+  main .menu .box {
+    width: 70%;
+    height: 55px;
+    margin-left: 15%;
+  }
+  main .menu .box .box-content h2 {
+    font-size: 14px;
+  }
+  main .menu .box .box-content p {
+    font-size: 12px;
+  }
+  main .menu .box .box-content p .prix {
+    margin-left: 63%;
+  }
+  main .menu button {
+    width: 20%;
+    height: 36px;
+  }
+  /*******Footer*****/
+  footer {
+    margin-top: 817px;
+  }
 }/*# sourceMappingURL=Palette_du_gout.css.map */

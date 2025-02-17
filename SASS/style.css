@@ -35,8 +35,8 @@ header {
   align-items: center;
 }
 header img {
-  width: 50%;
-  height: 30px;
+  width: 42%;
+  height: 35px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -48,6 +48,10 @@ form {
   width: 100%;
   background-color: #EAEAEA;
   height: 50px;
+}
+form .searchbar .fa-solid {
+  padding-right: 13px;
+  margin-left: 50px;
 }
 form .bar {
   background-color: #EAEAEA;
@@ -99,7 +103,7 @@ form ::placeholder {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-left: 20px;
+  padding-left: 8%;
   margin-bottom: 50px;
 }
 .onglet h2 {
@@ -107,22 +111,27 @@ form ::placeholder {
   margin-top: 30px;
   margin-bottom: 15px;
 }
-.onglet .item {
+.onglet .contener {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.onglet .contener .item {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
-  width: 90%;
-  height: 73px;
+  width: 88%;
+  height: 65px;
   border: none;
   border-radius: 20px;
   background-color: #F6F6F6;
 }
-.onglet .fa-solid {
+.onglet .contener .fa-solid {
   color: #7E7E7E;
   padding-left: 30px;
 }
-.onglet .fa-store {
+.onglet .contener .fa-store {
   color: var(--main-color);
 }
 
@@ -130,12 +139,16 @@ form ::placeholder {
 .restaurant {
   background-color: #F6F6F6;
   padding-top: 10px;
-  padding-left: 15px;
+  padding-left: 8%;
 }
 .restaurant .restaurant-cards {
   padding-bottom: 30px;
   display: flex;
   flex-direction: column;
+}
+.restaurant .restaurant-cards a {
+  text-decoration: none;
+  color: black;
 }
 .restaurant .restaurant-cards .new {
   width: 20%;
@@ -147,23 +160,23 @@ form ::placeholder {
   position: absolute;
   align-content: center;
   text-align: center;
-  margin-left: 218px;
+  margin-left: 62%;
   margin-top: 14px;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
 }
 .restaurant .restaurant-cards .card {
-  width: 95%;
+  width: 93%;
   height: 40%;
   border: none;
   border-radius: 15px;
   background-color: white;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .restaurant .restaurant-cards .card img {
   width: 100%;
-  height: 231px;
+  height: 176px;
   -o-object-fit: cover;
      object-fit: cover;
   border-top-left-radius: 15px;
@@ -207,4 +220,122 @@ footer .info li {
 footer .info li a {
   text-decoration: none;
   color: white;
+}
+
+/*******Desktop*******/
+@media (min-width: 1024px) {
+  /*******Header*******/
+  header img {
+    width: 15%;
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  header form {
+    width: 95%;
+    padding-left: 50px;
+    height: 30px;
+  }
+  header form .fa-solid {
+    padding-right: 5px;
+    color: #353535;
+    font-size: 10px;
+  }
+  header form ::-moz-placeholder {
+    color: #353535;
+    font-size: 10px;
+  }
+  header form ::placeholder {
+    color: #353535;
+    font-size: 10px;
+  }
+  /********Main*******/
+  .entete {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .entete h1 {
+    font-size: 35px;
+  }
+  .entete p {
+    font-size: 15px;
+    color: #353535;
+  }
+  .entete button {
+    width: 20%;
+  }
+  .onglet {
+    padding-left: 11%;
+    padding-top: 1%;
+  }
+  .onglet h2 {
+    font-size: 20px;
+  }
+  .onglet .contener {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .onglet .contener .item {
+    width: 26%;
+    font-size: 13px;
+    height: 50px;
+  }
+  .restaurant {
+    padding-left: 11%;
+  }
+  .restaurant .restaurant-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .restaurant .restaurant-cards .new {
+    margin-left: 25%;
+    width: 8%;
+  }
+  .restaurant .restaurant-cards .card {
+    width: 80%;
+  }
+  .restaurant .restaurant-cards .card img {
+    height: 168px;
+  }
+  .restaurant .restaurant-cards .card .card-content {
+    background-color: white;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-top: -4px;
+  }
+  .restaurant .restaurant-cards .card .card-content .card-txt h3 {
+    font-size: 15px;
+  }
+  .restaurant .restaurant-cards .card .card-content .card-txt p {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  /*******footer****/
+  footer .info {
+    flex-direction: row-reverse;
+  }
+  footer .info .title {
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 4px;
+  }
+  footer .info article {
+    padding-right: 4%;
+  }
+  footer .info article menu {
+    display: flex;
+    gap: 10px;
+    padding-top: 7px;
+  }
+  footer .info article menu .fa-solid {
+    font-size: 10px;
+  }
+  footer .info article menu li {
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+  footer .info article menu .mention {
+    padding-left: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
