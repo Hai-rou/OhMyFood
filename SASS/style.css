@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --main-color: #9356DC;
   --second-color: #FF79DA;
@@ -111,27 +112,44 @@ form ::placeholder {
   margin-top: 30px;
   margin-bottom: 15px;
 }
-.onglet .contener {
+.onglet ul {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  padding-inline-start: 0;
 }
-.onglet .contener .item {
+.onglet ul li::before {
+  color: #9356DC;
+  font-size: 28px;
+  margin-left: -10px;
+}
+.onglet ul .one::before {
+  content: "❶";
+}
+.onglet ul .two::before {
+  content: "❷";
+}
+.onglet ul .three::before {
+  content: "❸";
+}
+.onglet ul .item {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
-  width: 88%;
+  width: 94%;
   height: 65px;
   border: none;
   border-radius: 20px;
   background-color: #F6F6F6;
+  font-size: 12px;
+  font-weight: 500;
 }
-.onglet .contener .fa-solid {
+.onglet ul .fa-solid {
   color: #7E7E7E;
-  padding-left: 30px;
+  font-size: 1.2em;
 }
-.onglet .contener .fa-store {
+.onglet ul .fa-store {
   color: var(--main-color);
 }
 
@@ -186,6 +204,29 @@ form ::placeholder {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
+}
+.restaurant .restaurant-cards .card .card-content .card-txt .coeur {
+  position: absolute;
+  position-area: bottom;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 64%;
+  margin-top: -17px;
+  transition-property: transform;
+}
+.restaurant .restaurant-cards .card .card-content .card-txt .coeur:hover .fa-heart {
+  font-weight: 900;
+  background: -webkit-linear-gradient(var(--main-color), var(--second-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurant .restaurant-cards .card .card-content .card-txt .coeur .fa-heart {
+  font-weight: 200;
+  font-size: 1.5em;
 }
 
 /*******Footer*****/
@@ -271,15 +312,15 @@ footer .info li a {
   .onglet h2 {
     font-size: 20px;
   }
-  .onglet .contener {
+  .onglet ul {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 30px;
   }
-  .onglet .contener .item {
+  .onglet ul .item {
     width: 26%;
     font-size: 13px;
-    height: 50px;
+    height: 60px;
   }
   .restaurant {
     padding-left: 11%;
@@ -303,6 +344,9 @@ footer .info li a {
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     margin-top: -4px;
+  }
+  .restaurant .restaurant-cards .card .card-content .card-txt .fa-heart {
+    position: absolute;
   }
   .restaurant .restaurant-cards .card .card-content .card-txt h3 {
     font-size: 15px;

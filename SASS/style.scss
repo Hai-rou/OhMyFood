@@ -101,24 +101,43 @@ form{
         margin-top: 30px;
         margin-bottom: 15px;
     }
-    .contener{
+    ul{
         display: flex;
         flex-direction: column;
         gap: 15px;
+        padding-inline-start: 0;
+        li::before{
+            color: #9356DC;
+            font-size: 28px;
+            margin-left: -10px;
+        }
+        .one::before{
+            content: "\2776";
+    
+        }
+        .two::before{
+            content: "\2777";
+            
+        }
+        .three::before{
+            content: "\2778";
+        }
         .item{
         display: flex;
         justify-content: flex-start;
         align-items: center;
         gap: 20px;
-        width: 88%;
+        width: 94%;
         height: 65px;
         border: none;
         border-radius: 20px;
         background-color: #F6F6F6;
+        font-size: 12px;
+        font-weight: 500;
         }
         .fa-solid {
             color: #7E7E7E;
-            padding-left: 30px;
+            font-size: 1.2em;
         }
         .fa-store{
             color: var(--main-color);
@@ -173,6 +192,33 @@ form{
                 padding-top: 10px;
                 padding-bottom: 10px;
                 padding-left: 10px;
+                .card-txt{
+                    .coeur{
+                        position: absolute;
+                        position-area: bottom;
+                        width: 30px;
+                        height: 30px;
+                        background-color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: 64%;
+                        margin-top: -17px;
+                        transition-property: transform;
+                        &:hover{
+                            .fa-heart{
+                                font-weight: 900;
+                                background: -webkit-linear-gradient(var(--main-color),var(--second-color));
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                            }
+                        }
+                        .fa-heart{
+                            font-weight: 200;
+                            font-size: 1.5em;
+                        }
+                    } 
+                }
             }
         }
     }
@@ -256,14 +302,14 @@ footer{
         h2{
             font-size: 20px;
         }
-        .contener{
+        ul{
             display: flex;
             flex-direction: row;
-            gap: 10px;
+            gap: 30px;
             .item{
                 width: 26%;
                 font-size: 13px;
-                height: 50px;
+                height: 60px;
             }
         }
     }
@@ -287,6 +333,9 @@ footer{
                     border-bottom-left-radius: 15px;
                     margin-top: -4px;
                     .card-txt{
+                        .fa-heart{
+                            position: absolute;
+                        }
                         h3{
                             font-size: 15px;
                         }
