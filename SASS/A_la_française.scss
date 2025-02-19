@@ -53,6 +53,31 @@ main{
             padding-top: 20px;
             padding-left: 10px;
             margin-bottom: 20px;
+            .coeur{
+                position: absolute;
+                position-area: bottom;
+                width: 30px;
+                height: 30px;
+                background-color: #F6F6F6;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 64%;
+                margin-top: -32px;
+                transition-property: transform;
+                &:hover{
+                    .fa-heart{
+                        font-weight: 900;
+                        background: -webkit-linear-gradient(var(--main-color),var(--second-color));
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+                .fa-heart{
+                    font-weight: 200;
+                    font-size: 1em;
+                }
+            }
         }
         button{
             margin-top: 30px;
