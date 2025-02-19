@@ -222,6 +222,7 @@ form ::placeholder {
   font-weight: 900;
   background: -webkit-linear-gradient(var(--main-color), var(--second-color));
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .restaurant .restaurant-cards .card .card-content .card-txt .coeur .fa-heart {
