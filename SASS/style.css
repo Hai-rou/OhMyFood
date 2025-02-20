@@ -265,7 +265,7 @@ footer .info li a {
 }
 
 /*******Desktop*******/
-@media (min-width: 1024px) {
+@media (min-width: 1044px) {
   /*******Header*******/
   header img {
     width: 15%;
@@ -323,6 +323,7 @@ footer .info li a {
     font-size: 13px;
     height: 60px;
   }
+  /******Restaurants*****/
   .restaurant {
     padding-left: 11%;
   }
@@ -336,6 +337,7 @@ footer .info li a {
   }
   .restaurant .restaurant-cards .card {
     width: 80%;
+    margin-bottom: 50px;
   }
   .restaurant .restaurant-cards .card img {
     height: 168px;
@@ -346,8 +348,15 @@ footer .info li a {
     border-bottom-left-radius: 15px;
     margin-top: -4px;
   }
-  .restaurant .restaurant-cards .card .card-content .card-txt .fa-heart {
-    position: absolute;
+  .restaurant .restaurant-cards .card .card-content .card-txt {
+    display: flex;
+    flex-direction: column;
+  }
+  .restaurant .restaurant-cards .card .card-content .card-txt .coeur {
+    position: relative;
+    height: 9px;
+    margin-left: 84%;
+    padding-top: 12px;
   }
   .restaurant .restaurant-cards .card .card-content .card-txt h3 {
     font-size: 15px;

@@ -60,15 +60,13 @@ main .menu .title {
   margin-bottom: 20px;
 }
 main .menu .title .coeur {
-  position: absolute;
-  position-area: bottom;
   width: 30px;
   height: 30px;
   background-color: #F6F6F6;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 64%;
+  margin-left: 80%;
   margin-top: -32px;
   transition-property: transform;
 }
@@ -95,6 +93,8 @@ main .menu button {
   background: linear-gradient(var(--second-color), var(--main-color));
 }
 main .menu .box {
+  display: flex;
+  justify-content: space-between;
   width: 93%;
   border: none;
   border-radius: 15px;
@@ -103,7 +103,32 @@ main .menu .box {
   margin-top: 10px;
   margin-left: 10px;
 }
+main .menu .box .icone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 69px;
+  width: 15px;
+  margin-left: 10px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+main .menu .box .icone:hover {
+  transition: 1s ease-out;
+  width: 80px;
+  background-color: #99E2D0;
+}
+main .menu .box .icone:hover .fa-circle-check {
+  display: flex;
+}
+main .menu .box .icone .fa-circle-check {
+  display: none;
+  font-size: 20px;
+  color: white;
+}
 main .menu .box .box-content {
+  width: 100%;
   font-family: Roboto;
   padding-top: 12px;
   padding-left: 14px;
@@ -114,14 +139,13 @@ main .menu .box .box-content h2 {
   margin-bottom: 5px;
 }
 main .menu .box .box-content p {
+  display: flex;
+  justify-content: space-between;
   font-weight: 300;
   font-size: 13px;
 }
 main .menu .box .box-content .prix {
   font-weight: bold;
-  margin-left: 252px;
-  position: absolute;
-  justify-self: anchor-center;
 }
 
 /******Footer*****/
@@ -130,7 +154,7 @@ footer {
 }
 
 /*******Desktop*******/
-@media (min-width: 1024px) {
+@media (min-width: 1044px) {
   header img {
     width: 15%;
     height: 30px;

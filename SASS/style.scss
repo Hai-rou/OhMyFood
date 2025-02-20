@@ -257,7 +257,7 @@ footer{
     }
 }
 /*******Desktop*******/
-@media (min-width: 1024px){
+@media (min-width: 1044px){
     /*******Header*******/
     header{
         img{
@@ -313,6 +313,7 @@ footer{
             }
         }
     }
+    /******Restaurants*****/
     .restaurant{
         padding-left: 11%;
         .restaurant-cards{
@@ -324,6 +325,7 @@ footer{
             }
             .card{
                 width: 80%;
+                margin-bottom: 50px;
                 img{
                     height: 168px;
                 }
@@ -333,8 +335,13 @@ footer{
                     border-bottom-left-radius: 15px;
                     margin-top: -4px;
                     .card-txt{
-                        .fa-heart{
-                            position: absolute;
+                        display: flex;
+                        flex-direction: column;
+                        .coeur{
+                            position: relative;
+                            height: 9px;
+                            margin-left: 84%;
+                            padding-top: 12px;
                         }
                         h3{
                             font-size: 15px;
