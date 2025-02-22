@@ -25,7 +25,6 @@ header{
 }
 /******Body*****/
 main{
-    width: 100%;
     img{
         width: 100%;
         height: 275px;
@@ -57,15 +56,13 @@ main{
             padding-left: 10px;
             margin-bottom: 20px;
             .coeur{
-                position: absolute;
-                position-area: bottom;
                 width: 30px;
                 height: 30px;
                 background-color: #F6F6F6;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-left: 64%;
+                margin-left: 80%;
                 margin-top: -32px;
                 transition-property: transform;
                 &:hover{
@@ -94,6 +91,8 @@ main{
             background: linear-gradient(var(--second-color),var(--main-color))
         }
         .box{
+            display: flex;
+            justify-content: space-between;
             width: 93%;
             border: none;
             border-radius: 15px;
@@ -101,24 +100,67 @@ main{
             background-color: white;
             margin-top: 10px;
             margin-left: 10px;
+            animation: descend 4s ease forwards;
+            @keyframes descend {
+                0% {
+                    transform: translateY(-200%);
+                }
+                100% {
+                    transform: translateY(0);
+                }
+            }
+            .icone{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                height: 69px;
+                width: 15px;
+                margin-left: 10px;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                &:hover{
+                    transition: 1s ease-out;
+                    width: 80px;
+                    background-color: #99E2D0;
+                    .fa-circle-check{
+                        display: flex;
+                    }
+                }
+                .fa-circle-check{
+                    display: none;
+                    font-size: 20px;
+                    color: white;
+                }
+            }
             .box-content{
+                width: 100%;
                 font-family: Roboto;
                 padding-top: 12px;
                 padding-left: 14px;
+                animation: slide 5s ease forwards;
+                @keyframes slide {
+                    0% {
+                        transform: translateX(-100%);
+                    }
+                    100% {
+                        transform: translateX(0);
+                    }
+                }
                 h2{
                     font-weight: 500;
                     font-size: 17px;
                     margin-bottom: 5px;
                 }
                 p{
+                    display: flex;
+                    justify-content: space-between;
                     font-weight: 300;
                     font-size: 13px;
                 }
                 .prix{
                     font-weight: bold;
-                    margin-left: 252px;
-                    position: absolute;
-                    justify-self: anchor-center;
+                    
                 }
             }
         }
@@ -129,12 +171,12 @@ footer{
     margin-top: 906px;
 }
 /*******Desktop*******/
-@media (min-width: 1024px){
+@media (min-width: 1044px){
     header{
         img{
             width: 15%;
             height: 30px;
-            padding-top: 10px;
+            
             padding-bottom: 10px;
         }
         a{
@@ -148,12 +190,17 @@ footer{
         .menu{
             width: 73%;
             margin-left: 14%;
-            margin-top: 33%;
+            margin-top: -3%;
+            position: relative;
+            z-index: 3;
             .title{
                 text-align: center;
                 padding-left: 0;
                 font-size: 20px;
                 font-weight: 400;
+                .coeur{
+                    margin-left: 64%;
+                }
             }
             .sub-title{
                 margin-left: 15%;
@@ -162,6 +209,9 @@ footer{
                 width: 70%;
                 height: 55px;
                 margin-left: 15%;
+                .icone{
+                    height: 55px;
+                }
                 .box-content{
                     h2{
                         font-size: 14px;
@@ -169,7 +219,7 @@ footer{
                     p{
                         font-size: 12px;
                         .prix{
-                            margin-left: 63%;
+                            margin-left: 53%;
                         }
                     }
                 }
@@ -182,7 +232,6 @@ footer{
     }
     /*******Footer*****/
     footer{
-        margin-top: 817px;
+        margin-top: 0;
     }
 }
-    
