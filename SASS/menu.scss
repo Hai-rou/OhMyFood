@@ -109,6 +109,17 @@ main{
                     transform: translateY(0);
                 }
             }
+            &:hover{
+                .icone{
+                  transition: 1s ease-out;
+                width: 80px;
+                background-color: #99E2D0;
+                .fa-circle-check{
+                    display: flex;
+                }
+                }
+                
+            }
             .icone{
                 display: flex;
                 justify-content: center;
@@ -119,14 +130,7 @@ main{
                 margin-left: 10px;
                 border-top-right-radius: 15px;
                 border-bottom-right-radius: 15px;
-                &:hover{
-                    transition: 1s ease-out;
-                    width: 80px;
-                    background-color: #99E2D0;
-                    .fa-circle-check{
-                        display: flex;
-                    }
-                }
+                
                 .fa-circle-check{
                     display: none;
                     font-size: 20px;
@@ -138,7 +142,7 @@ main{
                 font-family: Roboto;
                 padding-top: 12px;
                 padding-left: 14px;
-                animation: slide 5s ease forwards;
+                animation: slide 2s ease forwards;
                 @keyframes slide {
                     0% {
                         transform: translateX(-100%);
@@ -190,13 +194,13 @@ footer{
         .menu{
             width: 73%;
             margin-left: 14%;
-            margin-top: -3%;
+            margin-top: -2%;
             position: relative;
             z-index: 3;
             .title{
                 text-align: center;
                 padding-left: 0;
-                font-size: 20px;
+                font-size: 28px;
                 font-weight: 400;
                 .coeur{
                     margin-left: 64%;

@@ -112,6 +112,14 @@ main .menu .box {
     transform: translateY(0);
   }
 }
+main .menu .box:hover .icone {
+  transition: 1s ease-out;
+  width: 80px;
+  background-color: #99E2D0;
+}
+main .menu .box:hover .icone .fa-circle-check {
+  display: flex;
+}
 main .menu .box .icone {
   display: flex;
   justify-content: center;
@@ -123,14 +131,6 @@ main .menu .box .icone {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-main .menu .box .icone:hover {
-  transition: 1s ease-out;
-  width: 80px;
-  background-color: #99E2D0;
-}
-main .menu .box .icone:hover .fa-circle-check {
-  display: flex;
-}
 main .menu .box .icone .fa-circle-check {
   display: none;
   font-size: 20px;
@@ -141,7 +141,7 @@ main .menu .box .box-content {
   font-family: Roboto;
   padding-top: 12px;
   padding-left: 14px;
-  animation: slide 5s ease forwards;
+  animation: slide 2s ease forwards;
 }
 @keyframes slide {
   0% {
@@ -187,14 +187,14 @@ footer {
   main .menu {
     width: 73%;
     margin-left: 14%;
-    margin-top: -3%;
+    margin-top: -2%;
     position: relative;
     z-index: 3;
   }
   main .menu .title {
     text-align: center;
     padding-left: 0;
-    font-size: 20px;
+    font-size: 28px;
     font-weight: 400;
   }
   main .menu .title .coeur {
