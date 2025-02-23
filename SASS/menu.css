@@ -113,7 +113,7 @@ main .menu .box {
   }
 }
 main .menu .box:hover .icone {
-  transition: 1s ease-out;
+  transition: 0.5s ease-out;
   width: 80px;
   background-color: #99E2D0;
 }
