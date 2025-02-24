@@ -84,7 +84,7 @@ main .menu .title .coeur .fa-heart {
 main .menu button {
   margin-top: 30px;
   margin-bottom: 30px;
-  width: 50%;
+  width: 30%;
   height: 45px;
   border: none;
   border-radius: 25px;
@@ -92,6 +92,10 @@ main .menu button {
   align-self: center;
   color: white;
   background: linear-gradient(var(--second-color), var(--main-color));
+}
+main .menu button:hover {
+  filter: brightness(1.3);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2509803922);
 }
 main .menu .box {
   display: flex;
@@ -115,7 +119,7 @@ main .menu .box {
 }
 main .menu .box:hover .icone {
   transition: 0.5s ease-out;
-  width: 80px;
+  width: 90px;
   background-color: #99E2D0;
 }
 main .menu .box:hover .icone .fa-circle-check {
@@ -127,8 +131,8 @@ main .menu .box .icone {
   align-items: center;
   background-color: white;
   height: 69px;
-  width: 15px;
-  margin-left: 10px;
+  width: 5px;
+  margin-left: 3px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
@@ -142,7 +146,10 @@ main .menu .box .box-content {
   font-family: Roboto;
   padding-top: 12px;
   padding-left: 14px;
-  animation: slide 2s ease forwards;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: slide 1s ease forwards;
 }
 @keyframes slide {
   0% {
@@ -156,12 +163,18 @@ main .menu .box .box-content h2 {
   font-weight: 500;
   font-size: 17px;
   margin-bottom: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 main .menu .box .box-content p {
   display: flex;
   justify-content: space-between;
   font-weight: 300;
   font-size: 13px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 main .menu .box .box-content .prix {
   font-weight: bold;
@@ -199,7 +212,7 @@ footer {
     font-weight: 400;
   }
   main .menu .title .coeur {
-    margin-left: 64%;
+    margin-left: 70%;
   }
   main .menu .sub-title {
     margin-left: 15%;
@@ -222,7 +235,7 @@ footer {
     margin-left: 53%;
   }
   main .menu button {
-    width: 20%;
+    width: 15%;
     height: 36px;
   }
   /*******Footer*****/

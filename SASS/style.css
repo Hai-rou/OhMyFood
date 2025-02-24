@@ -25,7 +25,7 @@
   animation-fill-mode: both;
 }
 .loader-area .loader {
-  height: 80px;
+  height: 100px;
   aspect-ratio: 1;
   position: relative;
 }
@@ -152,13 +152,18 @@ form ::placeholder {
 .entete button {
   margin-bottom: 30px;
   width: 70%;
-  height: 45px;
+  height: 40px;
+  font-size: 12px;
   border: none;
   border-radius: 25px;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2509803922);
   align-self: center;
   color: white;
   background: linear-gradient(var(--second-color), var(--main-color));
+}
+.entete button:hover {
+  filter: brightness(1.3);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2509803922);
 }
 
 /******Onglet******/
@@ -337,7 +342,7 @@ footer .info li a {
     padding-bottom: 10px;
   }
   header form {
-    height: 30px;
+    height: 40px;
     box-shadow: none;
   }
   header form .fa-solid {
