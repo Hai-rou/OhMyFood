@@ -109,6 +109,7 @@ form {
   width: 100%;
   background-color: #EAEAEA;
   height: 50px;
+  box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.2509803922);
 }
 form .searchbar .fa-solid {
   padding-right: 13px;
@@ -154,6 +155,7 @@ form ::placeholder {
   height: 45px;
   border: none;
   border-radius: 25px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2509803922);
   align-self: center;
   color: white;
   background: linear-gradient(var(--second-color), var(--main-color));
@@ -175,7 +177,7 @@ form ::placeholder {
 .onglet ul {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
   padding-inline-start: 0;
 }
 .onglet ul li::before {
@@ -204,6 +206,7 @@ form ::placeholder {
   background-color: #F6F6F6;
   font-size: 12px;
   font-weight: 500;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1490196078);
 }
 .onglet ul .fa-solid {
   color: #7E7E7E;
@@ -335,6 +338,7 @@ footer .info li a {
   }
   header form {
     height: 30px;
+    box-shadow: none;
   }
   header form .fa-solid {
     padding-right: 5px;
@@ -362,7 +366,7 @@ footer .info li a {
     color: #353535;
   }
   .entete button {
-    width: 20%;
+    width: 14%;
   }
   .onglet {
     padding-left: 11%;
