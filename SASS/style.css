@@ -38,7 +38,7 @@
   transform-origin: bottom;
 }
 .loader-area .loader::after {
-  background: radial-gradient(at 75% 15%, rgba(255, 255, 255, 0.7333333333), rgba(0, 0, 0, 0) 35%), radial-gradient(at 80% 40%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5333333333)), radial-gradient(circle 5px, #fff 94%, rgba(0, 0, 0, 0)), radial-gradient(circle 10px, #000 94%, rgba(0, 0, 0, 0)), linear-gradient(var(--main-color), var(--second-color)) top/100% calc(50% - 5px), linear-gradient(#fff 0 0) bottom/100% calc(50% - 5px) #000;
+  background: radial-gradient(at 75% 15%, rgba(255, 255, 255, 0.7333333333), rgba(0, 0, 0, 0) 35%), radial-gradient(at 80% 40%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5333333333)), radial-gradient(circle 5px, #fff 94%, rgba(0, 0, 0, 0)), radial-gradient(circle 10px, #000 94%, rgba(0, 0, 0, 0)), linear-gradient(var(--main-color), var(--second-color)) top/100% calc(50% - 5px), linear-gradient(#fff 0%, #fff 50%, #fff 50%) bottom / 100% calc(50% - 5px)#000;
   background-repeat: no-repeat;
   animation: l20 1s infinite cubic-bezier(0.5, 120, 0.5, -120);
 }
@@ -275,14 +275,13 @@ form ::placeholder {
 }
 .restaurant .restaurant-cards .card .card-content .card-txt .coeur {
   position: absolute;
-  position-area: bottom;
   width: 30px;
   height: 30px;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 64%;
+  margin-left: 69%;
   margin-top: -17px;
   transition-property: transform;
 }
@@ -332,6 +331,129 @@ footer .info li a {
   color: white;
 }
 
+/******Tablette*******/
+@media (min-width: 767px) {
+  header img {
+    width: 15%;
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  header form {
+    height: 40px;
+  }
+  header form .fa-solid {
+    padding-right: 5px;
+    color: #353535;
+    font-size: 15px;
+  }
+  header form ::-moz-placeholder {
+    color: #353535;
+    font-size: 15px;
+  }
+  header form ::placeholder {
+    color: #353535;
+    font-size: 15px;
+  }
+  /********Main*******/
+  .entete {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .entete h1 {
+    font-size: 35px;
+  }
+  .entete p {
+    font-size: 15px;
+    color: #353535;
+  }
+  .entete button {
+    width: 20%;
+  }
+  .onglet {
+    padding-left: 11%;
+    padding-top: 1%;
+  }
+  .onglet h2 {
+    font-size: 20px;
+  }
+  .onglet ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .onglet ul .item {
+    width: 50%;
+    font-size: 13px;
+    height: 60px;
+  }
+  /******Restaurants*****/
+  .restaurant {
+    padding-left: 11%;
+  }
+  .restaurant .restaurant-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .restaurant .restaurant-cards .new {
+    margin-left: 25%;
+    width: 8%;
+  }
+  .restaurant .restaurant-cards .card {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+  .restaurant .restaurant-cards .card img {
+    height: 168px;
+  }
+  .restaurant .restaurant-cards .card .card-content {
+    background-color: white;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-top: -4px;
+  }
+  .restaurant .restaurant-cards .card .card-content .card-txt {
+    display: flex;
+    flex-direction: column;
+  }
+  .restaurant .restaurant-cards .card .card-content .card-txt .coeur {
+    position: relative;
+    height: 9px;
+    margin-left: 84%;
+    padding-top: 12px;
+  }
+  .restaurant .restaurant-cards .card .card-content .card-txt h3 {
+    font-size: 15px;
+  }
+  .restaurant .restaurant-cards .card .card-content .card-txt p {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  /*******footer****/
+  footer .info {
+    flex-direction: row-reverse;
+  }
+  footer .info .title {
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 4px;
+  }
+  footer .info menu {
+    display: flex;
+    gap: 10px;
+    padding-top: 7px;
+  }
+  footer .info menu .fa-solid {
+    font-size: 10px;
+  }
+  footer .info menu li {
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+  footer .info menu .mention {
+    padding-left: 30px;
+  }
+}
 /*******Desktop*******/
 @media (min-width: 1044px) {
   /*******Header*******/
@@ -441,22 +563,19 @@ footer .info li a {
     font-weight: 400;
     padding-top: 4px;
   }
-  footer .info article {
-    padding-right: 4%;
-  }
-  footer .info article menu {
+  footer .info menu {
     display: flex;
     gap: 10px;
     padding-top: 7px;
   }
-  footer .info article menu .fa-solid {
+  footer .info menu .fa-solid {
     font-size: 10px;
   }
-  footer .info article menu li {
+  footer .info menu li {
     font-size: 10px;
     margin-bottom: 0;
   }
-  footer .info article menu .mention {
+  footer .info menu .mention {
     padding-left: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
