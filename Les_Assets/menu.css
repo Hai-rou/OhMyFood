@@ -106,7 +106,7 @@ main .menu .box {
   background-color: white;
   margin-top: 10px;
   margin-left: 10px;
-  animation: descend 4s ease forwards;
+  animation: descend 4s;
 }
 @keyframes descend {
   0% {
@@ -148,7 +148,7 @@ main .menu .box .box-content {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  animation: slide 1s ease forwards;
+  animation: slide 1s;
 }
 @keyframes slide {
   0% {
