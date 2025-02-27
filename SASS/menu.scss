@@ -104,7 +104,7 @@ main{
             background-color: white;
             margin-top: 10px;
             margin-left: 10px;
-            animation: descend 4s ease forwards;
+            animation: descend 4s;
             @keyframes descend {
                 0% {
                     transform: translateY(-200%);
@@ -147,7 +147,7 @@ main{
                 text-overflow: ellipsis;
                 overflow: hidden;
                 white-space: nowrap;
-                animation: slide 1s ease forwards;
+                animation: slide 1s;
                 @keyframes slide {
                     0% {
                         transform: translateX(-100%);
