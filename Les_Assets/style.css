@@ -38,7 +38,7 @@
   transform-origin: bottom;
 }
 .loader-area .loader::after {
-  background: radial-gradient(at 75% 15%, rgba(255, 255, 255, 0.7333333333), rgba(0, 0, 0, 0) 35%), radial-gradient(at 80% 40%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5333333333)), radial-gradient(circle 5px, #fff 94%, rgba(0, 0, 0, 0)), radial-gradient(circle 10px, #000 94%, rgba(0, 0, 0, 0)), linear-gradient(var(--main-color), var(--second-color)) top/100% calc(50% - 5px), linear-gradient(#fff 0%, #fff 50%, #fff 50%) bottom / 100% calc(50% - 5px)#000;
+  background: radial-gradient(at 75% 15%, rgba(255, 255, 255, 0.7333333333), rgba(0, 0, 0, 0) 35%), radial-gradient(at 80% 40%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5333333333)), radial-gradient(circle 5px, #fff 94%, rgba(0, 0, 0, 0)), radial-gradient(circle 10px, #000 94%, rgba(0, 0, 0, 0)), linear-gradient(var(--main-color), var(--second-color)) top/100% calc(50% - 5px), linear-gradient(#000 55%, #fff 50%, #fff 50%);
   background-repeat: no-repeat;
   animation: l20 1s infinite cubic-bezier(0.5, 120, 0.5, -120);
 }
