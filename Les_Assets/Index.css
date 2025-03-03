@@ -1,8 +1,27 @@
 @charset "UTF-8";
+/*****Base*****/
 :root {
   --main-color: #9356DC;
   --second-color: #FF79DA;
   --third-color: #99E2D0;
+}
+
+body {
+  width: 100%;
+}
+
+.titre {
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-family: Shrikhand;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
 }
 
 * {
@@ -10,7 +29,7 @@
   margin: 0;
 }
 
-/******Loader****/
+/****Loader****/
 .loader-area {
   display: flex;
   justify-content: center;
@@ -69,26 +88,9 @@
   }
 }
 
-/*******Body*****/
-body {
-  width: 100%;
-}
-
-.titre {
-  font-weight: 700;
-  font-size: 24px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.title {
-  font-family: Shrikhand;
-  font-weight: bold;
-  font-style: italic;
-  color: white;
-}
-
-/******Header****/
+/***********************BODY HTML*********************/
+/*****Header****/
+/******Header******/
 header {
   width: 100%;
   display: flex;
@@ -126,7 +128,8 @@ form ::placeholder {
   color: black;
 }
 
-/*******Main******/
+/*****Main******/
+/******Main******/
 .entete {
   display: flex;
   flex-direction: column;
@@ -297,6 +300,7 @@ form ::placeholder {
   font-size: 1.5em;
 }
 
+/****Footer****/
 /*******Footer*****/
 footer {
   width: 100%;
@@ -331,6 +335,7 @@ footer .info li a {
   color: white;
 }
 
+/****************Media queri*********/
 /******Tablette*******/
 @media (min-width: 767px) {
   header img {
@@ -578,4 +583,4 @@ footer .info li a {
   footer .info menu .mention {
     padding-left: 30px;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=Index.css.map */

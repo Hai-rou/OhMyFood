@@ -1,0 +1,18 @@
+/*****Base*****/
+@import "base/_color.scss";
+@import "base/_police.scss";
+
+/****Loader****/
+@import "Loader/_loarder.scss";
+
+/***********************BODY HTML*********************/
+/*****Header****/
+@import "Layouts/_header";
+/*****Main******/
+@import "Layouts/_principale.scss";
+/****Footer****/
+@import "Layouts/_footer.scss";
+
+/****************Media queri*********/
+@import "Media_Queri/_Mq-tablette.scss";
+@import "Media_Queri/_Mq-desktop.scss";

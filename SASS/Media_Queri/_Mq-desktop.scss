@@ -1,0 +1,126 @@
+/*******Desktop*******/
+@media (min-width: 1044px){
+    /*******Header*******/
+    header{
+        img{
+            width: 15%;
+            height: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        form{
+            height: 40px;
+            box-shadow: none;
+            .fa-solid{
+                padding-right: 5px;
+                color: #353535;
+                font-size: 10px;
+            }
+            ::placeholder{
+                color: #353535;
+                font-size: 10px;
+            }
+        }
+    }
+    /********Main*******/
+    .entete{
+        padding-left: 0;
+        padding-right: 0;
+        h1{
+            font-size: 35px;
+        }
+        p{
+            font-size: 15px;
+            color: #353535;
+        }
+        button{
+            width: 14%;
+        }
+    }
+    .onglet{
+        padding-left: 11%;
+        padding-top: 1%;
+        h2{
+            font-size: 20px;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            .item{
+                width: 26%;
+                font-size: 13px;
+                height: 60px;
+            }
+        }
+    }
+    /******Restaurants*****/
+    .restaurant{
+        padding-left: 11%;
+        .restaurant-cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .new{
+                margin-left: 25%;
+                width: 8%;
+            }
+            .card{
+                width: 80%;
+                margin-bottom: 50px;
+                img{
+                    height: 168px;
+                }
+                .card-content{
+                    background-color: white;
+                    border-bottom-right-radius: 15px;
+                    border-bottom-left-radius: 15px;
+                    margin-top: -4px;
+                    .card-txt{
+                        display: flex;
+                        flex-direction: column;
+                        .coeur{
+                            position: relative;
+                            height: 9px;
+                            margin-left: 84%;
+                            padding-top: 12px;
+                        }
+                        h3{
+                            font-size: 15px;
+                        }
+                        p{
+                            font-size: 14px;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*******footer****/
+    footer{
+        .info{
+            flex-direction: row-reverse;
+            .title{
+                font-size: 12px;
+                font-weight: 400;
+                padding-top: 4px;
+            }
+            menu{
+                display: flex;
+                gap: 10px;
+                padding-top: 7px;
+                .fa-solid{
+                    font-size: 10px;
+                }
+                li{
+                    font-size: 10px;
+                    margin-bottom: 0;
+                }
+                .mention{
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+    
+}

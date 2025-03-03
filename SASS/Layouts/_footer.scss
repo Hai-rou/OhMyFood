@@ -1,0 +1,33 @@
+/*******Footer*****/
+footer{
+    width: 100%;
+    background-color: #353535;
+    .info{
+        padding: 22px 25px 22px 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .title{
+            font-size: 18px;
+        }
+        menu{
+            padding: 0;
+            color: white;
+            .fa-utensils{
+                margin-right: 5px;
+            }
+            .fa-solid{
+                padding-right: 10px;
+                font-size: 14px;
+            }
+        }
+        li{
+            list-style-type: none;
+            margin-bottom: 5px;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
